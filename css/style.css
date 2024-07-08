@@ -202,6 +202,8 @@ body {
 
 .footer-section {
   display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 19.25rem;
   background: linear-gradient(
       0deg,
@@ -296,7 +298,47 @@ Media Queries for Responsiveness */
   .footer {
     grid-template-columns: 1fr;
     text-align: center;
+    padding: 5.75rem 6.125rem 4.125rem 6.125rem;
+    margin: auto;
     gap: 1rem;
+  }
+
+  .footer-description {
+    max-width: 35.8125rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 84rem) {
+  .footer {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 87.5rem) {
+  .footer {
+    gap: 2.8125rem;
+  }
+
+  .footer-secondary-heading {
+    font-size: 1.875rem;
+  }
+
+  .footer-description {
+    font-size: 1rem;
+  }
+
+  .btn a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1112) {
+  .footer-section {
+    gap: 0.8125rem;
+  }
+  .footer {
+    padding: 0 4.3125rem;
   }
 }
 
